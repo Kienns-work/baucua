@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.daybatvao {
+  top: 0;
+  left:-2;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.batup {
+  transition: all 0.8s ease-in-out;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.xoc {
+  animation: lacdia 0.8s;
+}
+@keyframes lacdia {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-3px, 1px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  80% {
+    transform: translate(1px, 2px) rotate(-1deg);
+  }
+  90% {
+    transform: translate(1px, -2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, 1px) rotate(-1deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.batngua {
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  background-position-x: 30px;
+  background-image: url("https://bizweb.dktcdn.net/thumb/1024x1024/100/365/685/products/plate-28.png?v=1583398404880");
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  font-weight: bold;
+  background: linear-gradient(88.88deg, orange 1.36%, brown 64.35%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
